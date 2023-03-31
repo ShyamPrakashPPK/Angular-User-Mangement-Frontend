@@ -1,0 +1,21 @@
+<div class="boody">
+    <div class="login-box">
+    
+        <form>
+            <div class="user-box">
+                <input type="email" name="Name" required="" [(ngModel)]="loginObj.Name">
+                <label>Admin Name</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="Password" required="" [(ngModel)]="loginObj.Password">
+                <label>Password</label>
+            </div>
+            <div class="center">
+               <button class="center" (click)="doLogin()"><a>
+                SEND
+                <span></span>
+            </a></button>
+            </div>
+        </form>
+    </div>
+</div>

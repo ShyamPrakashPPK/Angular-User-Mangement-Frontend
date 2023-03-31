@@ -1,0 +1,36 @@
+<div class="boody">
+    <div class="userBox" serBackgroundColor>
+        <p>User details</p>
+    
+    
+        <div class="card">
+            <div class="card-border-top">
+    
+            </div>
+            <div class="img"><img src="{{ url }}" alt="..." />
+    
+            </div>
+            <span>Name: {{ UserName }}</span>
+            <p class="job"> Email:{{ UserEmail }}</p>
+            <button (click)="editUser()"> edit details
+            </button>
+        </div>
+     
+        <!-- <p>User details</p>
+        <div>
+            <img src="{{ url }}" alt="..." />
+    
+        </div> -->
+        <form enctype="multipart/form-data" method="post">
+            <input type="file" name="image" id="image" (change)="selectImg($event)" /><br>
+            <button (click)="uploadImage()" class="btn btn-success">save</button>
+        </form>
+        <!-- <p>User Name :{{ UserName }}</p>
+        <p>User Email:{{ UserEmail }}</p> -->
+        <!-- <div (click)="editUser()" class="btn btn-primary">edit detalis</div> -->
+    </div>
+    <!-- <div *appIf="checker">
+        heooloalkfkjhak;lhgkljdsfjlkjadfslkjsdalkjalkadsfjlkjsdaf
+    </div> -->
+
+</div>
